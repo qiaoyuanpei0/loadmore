@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
 //        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -24,9 +24,9 @@ android {
         userOrg = 'xh-organ'                 //bintray注册的用户名
         groupId = 'com.jobs.loadmore'   //compile引用时的第1部分groupId
         artifactId = 'load-more'                //compile引用时的第2部分项目名
-        publishVersion = '0.0.2'            //compile引用时的第3部分版本号
+        publishVersion = '0.0.3'            //compile引用时的第3部分版本号
         desc = 'loadmore'
-        website = 'https://github.com/qiaoyuanpei0/loadmore0'
+        website = 'https://github.com/qiaoyuanpei0/loadmore'
     }
     compileOptions {
         sourceCompatibility 1.8

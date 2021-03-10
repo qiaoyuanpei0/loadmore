@@ -36,4 +36,16 @@ public class LoadMoreListViewContainer extends LoadMoreAbsListViewContainerBase 
         mListView = (ListView) getChildAt(0);
         return mListView;
     }
+    //最后一页，且显示 已经到底等等..
+    public void loadMoreShowEnd(){
+        loadMoreFinish(false,false);
+    }
+    //最后一页，但是不显示到底等内容
+    public void loadMoreNotShowEnd(){
+        loadMoreFinish(true,false);
+    }
+    //没有到底 仍可加载下一页
+    public void loadMoreNotEnding(){
+        loadMoreFinish(false,true);
+    }
 }
