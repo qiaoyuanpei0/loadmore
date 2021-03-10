@@ -48,4 +48,15 @@ public class LoadMoreListViewContainer extends LoadMoreAbsListViewContainerBase 
     public void loadMoreNotEnding(){
         loadMoreFinish(false,true);
     }
+
+    //根据自己项目需求写的方法，慎用
+    public void setLoadMoreStatusView(boolean isLastPage,int page){
+        if (!isLastPage){
+            loadMoreNotEnding();
+        }else if (page>1){
+            loadMoreShowEnd();
+        }else {
+            loadMoreNotShowEnd();
+        }
+    }
 }
